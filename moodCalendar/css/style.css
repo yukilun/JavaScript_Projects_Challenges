@@ -17,7 +17,7 @@ header{
     margin: 20px auto;
     text-align: center;
     position: relative;
-    height: 120px;
+    height: 150px;
 }
 
 header div#headerContainer{
@@ -30,15 +30,15 @@ header div#headerContainer{
 }
 
 header h1{
-    margin: 10px 0px;
+    margin: 10px;
 }
 
 header p{
-    margin: 5px 0px;
+    margin: 10px;
 }
 
 ul#mood{
-    margin: auto;
+    margin: 10px auto;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -109,7 +109,7 @@ div.day{
     width:25px;
     height: 25px;
     margin: auto;
-    background-color: lightgray;
+    background-color: #E8DBD9;
     border-radius: 50%;
     line-height: 25px;
     cursor: pointer;
