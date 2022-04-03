@@ -1,2 +1,2 @@
-# JavaScript_Projects_Challenges
+# JavaScript Projects Challenges
  
