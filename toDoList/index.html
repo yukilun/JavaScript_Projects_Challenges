@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5ac12c9c1d.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/toDoList.js" defer></script>
+</head>
+<body>
+
+    <div id="input">
+        
+        <form>
+           <fieldset>
+               <legend>To-Do List</legend>
+
+                <div class="formRow">
+                    <label for="taskBox">Task Name:</label>
+                    <input type="text" id="taskBox" name="task" placeholder=" e.g. Study HTML" required>
+                </div>
+
+                <div class="formRow">
+                    <label for="dueDateBox">Due Date:</label>
+                    <input type="date" id="dueDateBox" name="dueDate" required>
+                </div>
+
+                <div id="button">
+                    <button type="button" onclick="submitRecord()">
+                        <i class="fa-solid fa-paper-plane"></i> Submit
+                    </button>
+    
+                    <button type="reset">
+                        <i class="fa-solid fa-arrow-rotate-left"></i> Reset
+                    </button>
+                </div>
+
+                <button type="submit" style="display: none;"></button>
+
+           </fieldset> 
+        </form>
+
+    </div>
+
+
+    <div id="output">
+
+    </div>
+
+</body>
+</html>

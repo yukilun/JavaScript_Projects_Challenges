@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note Taker</title>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/5ac12c9c1d.js" crossorigin="anonymous"></script>
+    <script src="js/noteTaker.js"></script>
+</head>
+<body>
+    <h1>Note Taker</h1>
+    
+    <form>
+        <fieldset>
+            <legend>Add A New Notes:</legend>
+            
+            <div class="formRow">
+                <label for="noteBox">Note:</label>
+                <textarea name="note" id="noteBox" required></textarea>
+            </div>
+
+            <button type="button" onclick="addNote()">Add Note</button>
+        </fieldset>
+    </form>
+
+    <section id="noteSection">
+
+    </section>
+
+    <section id="popupDetail">
+        <div id="popupBox">
+            <button onclick="closeDetail()"><i class="fa-solid fa-xmark"></i></button>
+            <p id="popupText"></p>
+        </div>
+    </section>
+
+</body>
+</html>
