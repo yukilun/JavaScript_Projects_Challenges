@@ -1,5 +1,9 @@
-var projectNames = ['New Year Countdown','Matching Game','Notes Taker','Quiz App','To Do List', 'Vowel Counter'];
-var projectURLs = ['countdown/index.html','matchingGame/index.html','noteTakerApp/index.html','quizApp/index.html','toDoList/index.html','vowelCounter/index.html'];
+var projectNames = ['New Year Countdown','Matching Game','Notes Taker',
+                    'Quiz App','To Do List', 'Vowel Counter',
+                    'Mood Calendar'];
+var projectURLs = ['countdown/index.html','matchingGame/index.html','noteTakerApp/index.html',
+                    'quizApp/index.html','toDoList/index.html','vowelCounter/index.html',
+                    'moodCalendar/index.html'];
 var projectTable = document.getElementById("projectList");
 
 generateTable();

@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Assistant', sans-serif;
+}
+
+body{
+    width: 90%;
+    max-width: 1024px;
+    height: 100%;
+    margin: auto;
+    background-color: #FFF4E9;
+}
+
+header{
+    width: 100%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+header h1{
+    margin: 10px 0px;
+}
+
+header p{
+    margin: 5px 0px;
+}
+
+ul#mood{
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    list-style-type: none;
+}
+
+ul#mood li{
+    padding: 5px;
+    font-size: 30px;
+}
+
+ul#mood i{
+    cursor: pointer;
+}
+
+i#happy{
+    color: rgb(175, 228, 95);
+}
+
+i#love{
+    color: rgb(255, 155, 217);
+}
+
+i#smile{
+    color: rgb(250, 204, 0);
+}
+
+i#sad{
+    color: rgb(96, 146, 221);
+}
+
+i#angry{
+    color:rgb(241, 125, 125);
+}
+
+i:hover{
+    transform:scale(1.2);
+}
+
+section#calendar{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+table{
+    flex: 1 1 300px;
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 12px;
+    border-collapse: collapse;
+}
+
+table caption{
+    font-weight: bold;
+    font-size: 20px;
+    padding: 5px 0px;
+}
+
+table th, table td{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+
+div.day{
+    width:25px;
+    height: 25px;
+    margin: auto;
+    background-color: lightgray;
+    border-radius: 50%;
+    line-height: 25px;
+    cursor: pointer;
+}
+
+div.day:hover{
+    transform: scale(1.2);
+}
