@@ -114,19 +114,24 @@ table#projectList td a{
     position: relative;
 }
 
+table#projectList td a:hover{
+    color: #385b5c;
+}
+
+
 
 table#projectList td a::after{
-    content:"";
+    content:" ";
     display: block;
     position: absolute;
-    width: 100%;
+    width: 0%;
     height: 2px;
+    margin: auto;
     background-color: #a3403d;
-    opacity: 0;
-    transition: opacity 0.5s;
+    transition: all 0.5s;
 }
 table#projectList td a:hover::after{
-    opacity: 1;
+    width: 100%;
 }
 
 ::-webkit-scrollbar {
