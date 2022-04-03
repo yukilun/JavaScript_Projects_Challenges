@@ -109,7 +109,7 @@ div.day{
     width:25px;
     height: 25px;
     margin: auto;
-    background-color: #E8DBD9;
+    background-color: rgb(232, 219, 217);
     border-radius: 50%;
     line-height: 25px;
     cursor: pointer;

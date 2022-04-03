@@ -26,13 +26,13 @@ function selectMood(index){
 
 function setMood(dayId){
     var day = document.getElementById(dayId);
-    if(day.style.backgroundColor == "#E8DBD9" || day.style.backgroundColor==""){
+    if(day.style.backgroundColor == "rgb(232, 219, 217)" || day.style.backgroundColor==""){
         if(selectedColorIndex!= -1){
             day.style.backgroundColor = moodColor[selectedColorIndex];
         }  
     }
     else{
-        day.style.backgroundColor = "#E8DBD9";
+        day.style.backgroundColor = "rgb(232, 219, 217)";
     }
 }
 
