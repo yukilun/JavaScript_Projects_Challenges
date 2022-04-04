@@ -15,6 +15,7 @@ function submitRecord(){
     if(inputTaskName.checkValidity() && inputDueDate.checkValidity()){  
         taskNames.push(inputTaskName.value);
         dueDates.push(new Date(inputDueDate.value+"T00:00:00"));
+        console.log(dueDates);
         taskFinished.push("N");
         toDoList();
     }
