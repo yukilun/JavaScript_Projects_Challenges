@@ -9,6 +9,8 @@ function submitRecord(){
     var inputTaskName = document.getElementById("taskBox");
     var inputDueDate = document.getElementById("dueDateBox");
 
+    console.log(inputDueDate.value);
+
     if(inputTaskName.checkValidity() && inputDueDate.checkValidity()){  
         taskNames.push(inputTaskName.value);
         dueDates.push(new Date(inputDueDate.value+" 00:00:00"));

@@ -83,7 +83,7 @@ div#typing span::after{
 }
 
 table#projectList{
-    margin: auto;
+    margin: 10px auto 50px;
     width: 80%;
     background-color: rgba(255,255,255,0.2);
     border-collapse: collapse;
@@ -150,4 +150,11 @@ table#projectList td a:hover::after{
 
 ::-webkit-scrollbar-thumb:hover {
   background: #385b5c;
+}
+
+@media only screen and (max-width: 425px) {
+   
+    table#projectList{
+        font-size: 18px;
+    }
 }

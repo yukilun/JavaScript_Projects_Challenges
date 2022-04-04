@@ -7,7 +7,7 @@
 
 body{
     min-height: 100vh;
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
@@ -102,8 +102,14 @@ button {
    text-decoration: none;
 }
 
+div#output{
+    width: 90%;
+    overflow: auto;
+}
+
 table{
     max-width: 100%;
+    margin: 5px auto 50px;
     border-collapse: collapse;
 }
 
@@ -137,6 +143,12 @@ table tr:last-of-type td:last-child {
     border-bottom-right-radius: 10px;
 }
 
+table button{
+    margin: 0px;
+    padding: 10px 5px;
+    width: 80px;
+}
+
 div.markFinished{
     width: 30px;
     height: 30px;
@@ -168,3 +180,28 @@ input:focus:valid{
 input:focus:invalid{
     background-color: pink;
 } */
+
+@media only screen and (max-width:425px) {
+    table{
+        font-size: 13px !important;
+    }
+
+    table th, table td{
+        padding: 10px 5px;
+    } 
+    table button{
+        margin: 0px;
+        padding: 5px 3px;
+        width: 60px;
+    }
+
+    div.markFinished{
+        width: 20px;
+        height: 20px;
+    }
+
+    div.markFinished i{
+        line-height: 20px;
+        font-size: 15px;
+    }
+}
