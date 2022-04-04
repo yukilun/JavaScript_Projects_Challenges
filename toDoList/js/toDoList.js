@@ -1,6 +1,7 @@
 
 var taskNames = new Array();
 var dueDates = new Array();
+var taskFinished = new Array();
 
 toDoList();
 
@@ -14,6 +15,7 @@ function submitRecord(){
     if(inputTaskName.checkValidity() && inputDueDate.checkValidity()){  
         taskNames.push(inputTaskName.value);
         dueDates.push(new Date(inputDueDate.value+" 00:00:00"));
+        taskFinished.push("N");
         toDoList();
     }
     else{
@@ -31,6 +33,7 @@ function toDoList(){
         var sortedOrder= new Array();
         var sortedTaskName= new Array();
         var sortedDueDate = new Array();
+        var sortedTaskFinished = new Array();
 
         for(var i=0; i<dueDates.length; i++){
             sortedOrder.push(i);
@@ -41,11 +44,12 @@ function toDoList(){
         for(var i=0; i<dueDates.length; i++){
             sortedTaskName.push(taskNames[sortedOrder[i]]);
             sortedDueDate.push(dueDates[sortedOrder[i]]);
+            sortedTaskFinished.push(taskFinished[sortedOrder[i]]);
         }
         
         taskNames = sortedTaskName;
         dueDates = sortedDueDate;
-        
+        taskFinished = sortedTaskFinished;
         
 
         for(var i=0; i<taskNames.length; i++){
@@ -64,37 +68,49 @@ function toDoList(){
     }
 
     document.getElementById("output").innerHTML = outputHTML;
-
+    
+    displayFinished();
 }
 
 function markFinished(index){
-    var checkMark = document.querySelectorAll("div.markFinished i")[index];
-    var rowCells = document.querySelectorAll("table tr:nth-of-type("+ parseInt(index+2) +") td");
-
-    if(checkMark.style.display != "inline"){
-
-        checkMark.style.display = "inline";
-
-        for(var i= 1; i<=3; i++){
-            rowCells[i].style.color = "gray";
-            rowCells[i].style.textDecoration = "line-through";
-        }
-
+    if(taskFinished[index] == "N"){
+        taskFinished[index] = "Y";
     }
     else{
+        taskFinished[index] = "N";
+    }
+    displayFinished();
+}
 
-        checkMark.style.display = "none";
+function displayFinished(){
 
-        for(var i= 1; i<=3; i++){
-            rowCells[i].style.color = "black";
-            rowCells[i].style.textDecoration = "none";
+    for(var i=0; i<taskFinished.length; i++){
+
+        var checkMark = document.querySelectorAll("div.markFinished i")[i];
+        var rowCells = document.querySelectorAll("table tr:nth-of-type("+ parseInt(i+2) +") td");
+
+        if(taskFinished[i] == "Y"){
+            checkMark.style.display = "inline";
+    
+            for(var j= 1; j<=3; j++){
+                rowCells[j].style.color = "gray";
+                rowCells[j].style.textDecoration = "line-through";
+            }
+        }
+        else{
+            checkMark.style.display = "none";
+    
+            for(var k= 1; k<=3; k++){
+                rowCells[k].style.color = "black";
+                rowCells[k].style.textDecoration = "none";
+            }
         }
     }
-
 }
 
 function deleteRecord(index){
     taskNames.splice(index, 1);
     dueDates.splice(index, 1);
+    taskFinished.splice(index, 1);
     toDoList();
 }
