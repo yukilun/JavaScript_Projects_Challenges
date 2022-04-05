@@ -10,6 +10,7 @@ function addNote(){
     else{
         notes.push(inputNote.value);
         displayNotes();
+        inputNote.value="";
     }
 }
 

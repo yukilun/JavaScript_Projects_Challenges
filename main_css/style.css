@@ -64,6 +64,7 @@ div#typing{
 
 div#typing span{
     position: relative;
+    overflow: hidden;
 }
 
 div#typing span::after{
@@ -74,13 +75,32 @@ div#typing span::after{
     top:0;
     left: 0;
     background-color: #548687;
-    border-left: 3px solid #a3403d;
-    animation: typing steps(30) 5s forwards;
+    border-left: 0px solid #a3403d;
+    /* animation: typing steps(30) 5s forwards; */
+}
+
+span#word1::after{
+    animation: typing steps(11) 1.49s forwards, blinking 0.01s 1.49s forwards;
+}
+
+span#word2::after{
+    animation: typing steps(9) 1.49s 1.5s forwards, blinking 0.01s 2.99s forwards;
+}
+
+span#word3::after{
+    animation: typing steps(11) 1.5s 3s forwards, blinking 0.8s 4.5s infinite;
 }
 
 @keyframes typing {
-    100%{left: calc(100% + 20px)};
+    0%{border-left: 3px solid #a3403d; left: 0;}
+    100%{border-left: 3px solid #a3403d; left: calc(100% + 10px);};
 }
+
+@keyframes blinking {
+    0%{opacity: 1;}
+    100%{opacity: 0;};
+}
+
 
 table#projectList{
     margin: 10px auto 50px;
