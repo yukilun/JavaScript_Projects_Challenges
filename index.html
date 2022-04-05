@@ -7,7 +7,8 @@
     <title>Yuki Lun's JavaScript Projects Challenge</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main_css/style.css">
-    <script src="main_js/createTable.js" defer></script>
+    <script src="https://kit.fontawesome.com/5ac12c9c1d.js" crossorigin="anonymous"></script>
+    <script src="main_js/createList.js" defer></script>
 </head>
 <body>
     <header>
@@ -18,11 +19,20 @@
         </div>
     </header>
 
-    <div id="typing"><span id="word1">Javascript </span><span id="word2">Projects </span><span id="word3">Challenges </span></div>
+    <div id="typing">
+        <span id="word1">Javascript </span>
+        <span id="word2">Projects </span>
+        <span id="word3">Challenges </span>
+    </div>
     
-    <table id="projectList">
+    <div id="search">
+        <label for="searchString"><i class="fa-solid fa-magnifying-glass"></i></label>&nbsp;
+        <input type="text" id="searchString" onkeyup="generateList()" placeholder="search projects here" autofocus>
+    </div>
 
-    </table>
+    <div id="projectList">
+
+    </div>
 
 </body>
 </html>

@@ -1,7 +1,7 @@
 var imgOrder = [1,1,2,2,3,3];
-var imgHTML = ["<img src='https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortWaved&accessoriesType=Blank&hairColor=BlondeGolden&facialHairType=MoustacheMagnum&facialHairColor=BrownDark&clotheType=BlazerSweater&eyeType=Happy&eyebrowType=FlatNatural&mouthType=Tongue&skinColor=Brown'/>", 
-                "<img src='https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortFlat&accessoriesType=Sunglasses&hairColor=BrownDark&facialHairType=BeardLight&facialHairColor=Black&clotheType=GraphicShirt&clotheColor=Heather&graphicType=Deer&eyeType=Surprised&eyebrowType=UnibrowNatural&mouthType=Default&skinColor=Pale'/>",
-                "<img src='https://avataaars.io/?avatarStyle=Transparent&topType=LongHairBigHair&accessoriesType=Blank&hairColor=Auburn&facialHairType=Blank&clotheType=Hoodie&clotheColor=PastelYellow&eyeType=Happy&eyebrowType=RaisedExcited&mouthType=Smile&skinColor=Pale'/>"];
+var imgHTML = ["<img src='img/avataaars1.png'/>", 
+                "<img src='img/avataaars2.png'/>",
+                "<img src='img/avataaars3.png'/>"];
 var choosenCard = new Array();
 var score = 0;
 var failedAttempt = 0;
@@ -29,15 +29,15 @@ function chooseCard(index){
     }
 
     if(choosenCard.length == 2){
-        setTimeout("checkCard()",5);
-        setTimeout("resetCard()",5);
+        setTimeout("checkCard()",10);
+        setTimeout("resetCard()",10);
     }
 
 }
 
 function checkCard(){
     if(imgOrder[choosenCard[0]] == imgOrder[choosenCard[1]]){
-        window.alert("Cards match! Congrat!");
+        window.alert("Cards match! Congratulations!");
         score++;
     }
     else{

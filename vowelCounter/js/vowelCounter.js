@@ -2,7 +2,8 @@ var vowels = ["a", "e", "i", "o", "u","A", "E", "I", "O", "U"];
 
 
 function countVowel(){
-    var inputText = document.getElementById("inputText").value;
+    var input = document.getElementById("inputText");
+    var inputText = input.value;
     var result = document.getElementById("result");
 
 
@@ -36,6 +37,7 @@ function countVowel(){
 
         stringHTML += "</span>";
         result.innerHTML = "There are <b>"+count+"</b> vowels!</br></br>" +  stringHTML;
+        input.value = "";
     }
 
 }
