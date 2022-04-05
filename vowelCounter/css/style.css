@@ -13,7 +13,16 @@ html{
 body{
     width: 90%;
     height: 100%;
+    margin: auto;
     text-align: center;
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+div#container{
+    width: 100%;
 }
 
 h1{
@@ -21,7 +30,8 @@ h1{
 }
 
 input{
-    width: 400px;
+    width: 90%;
+    max-width: 400px;
     height: 30px;
     display: block;
     margin: auto;
@@ -42,4 +52,27 @@ button{
 
 button:hover{
     background-color:#3a414e;
+}
+
+div#result{
+    width: 90%;
+    max-width: 400px;
+    padding: 20px 10px;
+    margin: auto;
+    min-height: 100px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+div#result b{
+    font-size: 20px;
+}
+
+span#resultString{
+    font-size: 20px;
+}
+
+span#resultString b{
+     color: rgb(223, 72, 72);
+     text-decoration: underline;
 }
