@@ -1,49 +1,42 @@
-var projectNames = ['New Year Countdown','Matching Game','Notes Taker',
-                    'Quiz App','To Do List', 'Vowel Counter',
-                    'Mood Calendar'];
-var projectURLs = ['countdown/index.html','matchingGame/index.html','noteTakerApp/index.html',
-                    'quizApp/index.html','toDoList/index.html','vowelCounter/index.html',
-                    'moodCalendar/index.html'];
-
 const projects = [
     {  
         number: 1,
         name: 'New Year Countdown',
-        url: 'countdown/index.html',
+        url: 'countdown/',
         img: 'main_img/countdown.png'
     },{
         number: 2,
         name: 'Matching Game',
-        url: 'matchingGame/index.html',
+        url: 'matchingGame/',
         img: 'main_img/matchingGame.png'
     },{
         number: 3,
         name: 'Notes Taker',
-        url: 'noteTakerApp/index.html',
+        url: 'noteTakerApp/',
         img: 'main_img/noteTakerApp.png'
     }
     ,{
         number: 4,
         name: 'Quiz App',
-        url: 'quizApp/index.html',
+        url: 'quizApp/',
         img: 'main_img/quizApp.png'
     }
     ,{
         number: 5,
         name: 'To Do List',
-        url: 'toDoList/index.html',
+        url: 'toDoList/',
         img: 'main_img/toDoList.png'
     }
     ,{
         number: 6,
         name: 'Vowel Counter',
-        url: 'vowelCounter/index.html',
+        url: 'vowelCounter/',
         img: 'main_img/vowelCounter.png'
     }
     ,{
         number: 7,
         name: 'Mood Calendar',
-        url: 'moodCalendar/index.html',
+        url: 'moodCalendar/',
         img: 'main_img/moodCalendar.png'
     }
 ];
