@@ -4,8 +4,6 @@ var cursorY = 0;
 var eyeDistance = 10;
 var centerCoord = 25;
 
-showCursor();
-
 function changeCoordinate(e){
     previousCursorX = cursorX;
     cursorX = e.clientX;
@@ -27,7 +25,7 @@ function showCursor(){
     var cursor = document.getElementById("cursor");
     cursor.style.top = cursorY + "px";
     cursor.style.left = cursorX+ "px";
-    console.log(cursorX - previousCursorX);
+    cursor.style.display = "block";
     if(cursorX - previousCursorX < 0){
         cursor.style.transform = "scaleX(-1)";
     }
