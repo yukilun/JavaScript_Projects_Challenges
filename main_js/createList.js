@@ -39,6 +39,12 @@ const projects = [
         url: 'moodCalendar/',
         img: 'main_img/moodCalendar.png'
     }
+    ,{
+        number: 8,
+        name: 'Cat Eye Moving',
+        url: 'carEyesMoving/',
+        img: 'main_img/carEyesMoving.png'
+    }
 ];
 
 var projectList = document.getElementById("projectList");
