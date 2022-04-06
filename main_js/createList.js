@@ -77,8 +77,8 @@ function generateList(){
         projectHTML+="</table>"
     });
 
-    if(searchedProject.length < 2){
-        var emptyProject = 2 - searchedProject.length;
+    if(searchedProject.length < 3){
+        var emptyProject = 3 - searchedProject.length;
         for(var i = 0; i < emptyProject; i++){
             projectHTML+="<table class='empty'></table>";
         }
