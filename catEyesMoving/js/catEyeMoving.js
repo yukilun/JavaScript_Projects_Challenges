@@ -4,6 +4,8 @@ var cursorY = 0;
 var eyeDistance = 10;
 var centerCoord = 25;
 
+showCursor();
+
 function changeCoordinate(e){
     previousCursorX = cursorX;
     cursorX = e.clientX;
