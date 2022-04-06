@@ -42,8 +42,8 @@ const projects = [
     ,{
         number: 8,
         name: 'Cat Eye Moving',
-        url: 'carEyesMoving/',
-        img: 'main_img/carEyesMoving.png'
+        url: 'catEyesMoving/',
+        img: 'main_img/catEyesMoving.png'
     }
 ];
 
