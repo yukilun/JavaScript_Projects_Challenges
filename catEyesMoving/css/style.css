@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+html{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    background-color: #D7C1CD;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    position: relative; */
+    cursor: none;
+    overflow: hidden;
+}
+
+h1{
+    margin: 50px auto 20px;
+    width: 90%;
+    color: #824670;
+}
+p{
+    margin: 20px auto;
+    width: 90%;
+    color: #66797e;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.container{
+    width: 350px;
+    height: 250px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.face{
+    width: 200px;
+    height: 150px;
+    background-color: white;
+    position: relative;
+    left: 75px;
+    bottom: -70px;
+    border-radius: 60px;
+}
+
+.ear-1, .ear-2{
+    width: 0;
+    height: 0;
+    border-bottom: 60px solid white;
+    border-right: 60px solid transparent;
+    position: relative; 
+    z-index: -1;
+}
+
+.ear-1{
+    left: 10px;
+    top: -50px;
+    transform: rotate(-15deg);
+}
+
+.ear-2{
+    left: 130px;
+    top: -110px;
+    transform: scaleX(-1) rotate(-15deg);
+}
+
+.ear-inner-1,.ear-inner-2{
+    width: 0;
+    height: 0;
+    border-bottom: 60px solid pink;
+    border-right: 30px solid transparent;
+    position: relative; 
+    z-index: -2;
+}
+
+.eye-1,.eye-2{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(114, 142, 150);
+    position: relative;
+}
+
+.eye-1{
+    left: 30px;
+    top: -80px;
+}
+
+.eye-2{
+    left: 120px;
+    top: -130px;
+}
+
+.eye-moving-1, .eye-moving-2{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    position: relative;
+    top: 25px;
+    left: 25px;
+    transform: translate(-50%,-50%);
+}
+
+.nose{
+    width: 20px;
+    height: 15px;
+    border-radius: 50% 50% 50% 50% / 25% 25% 65% 65% ;
+    background-color: pink;
+    position: absolute;
+    top: 85px;
+    left: 87.5px;
+    z-index: 2;
+}
+
+.mouth-1, .mouth-2{
+    width: 25px;
+    height: 20px;
+    border-right: 3px solid rgb(71, 71, 71);
+    border-bottom: 3px solid rgb(71, 71, 71);
+    border-bottom-right-radius: 25px;
+    position: absolute;
+    z-index: 1;
+}
+.mouth-1{
+    top: 90px;
+    left: 72px;
+}
+
+.mouth-2{
+    transform: scaleX(-1);
+    top: 90px;
+    left: 95px;
+}
+
+#cursor{
+    position: absolute;
+    color: rgb(213, 237, 247);
+    font-size: 50px;
+    top: 50%;
+    left: 50%;
+    z-index: 5;
+    transition: 0.1s;
+}
+
+@media only screen and (max-width: 425px){
+    #cursor{
+        font-size: 40px;
+    }
+}

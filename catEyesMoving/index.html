@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Eyes Moving</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5ac12c9c1d.js" crossorigin="anonymous"></script>
+    <script src="js/catEyeMoving.js"></script>
+</head>
+<body ontouchmove="changeCoordinateTouch(event)" onmousemove="changeCoordinate(event)">
+    <h1>Cat Eye Moving</h1>
+    <p>Try to Move Around!</p>
+    <div class="container">
+        <div class="face">
+            <div class="ear-1">
+                <div class="ear-inner-1"></div>
+            </div>
+            <div class="ear-2">
+                <div class="ear-inner-2"></div>
+            </div>
+            <div class="eye-1">
+                <div class="eye-moving-1"></div>
+            </div>
+            <div class="eye-2">
+                <div class="eye-moving-2"></div>
+            </div>
+            <div class="nose"></div>
+            <div class="mouth-1"></div>
+            <div class="mouth-2"></div>
+        </div>
+    </div>
+    <div id="cursor"><i class="fa-solid fa-fish fa-bounce"></i></div>
+</body>
+</html>
