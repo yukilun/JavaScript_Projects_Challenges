@@ -180,6 +180,10 @@ table:hover td img{
     filter:none;
 }
 
+table.empty{
+    opacity: 0;
+}
+
 ::-webkit-scrollbar {
     width: 20px;
 }

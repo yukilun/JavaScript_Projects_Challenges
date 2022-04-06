@@ -77,5 +77,13 @@ function generateList(){
         projectHTML+="</table>"
     });
 
+    if(searchedProject.length < 2){
+        var emptyProject = 2 - searchedProject.length;
+        for(var i = 0; i < emptyProject; i++){
+            projectHTML+="<table class='empty'></table>";
+        }
+    }
+
+
     projectList.innerHTML = projectHTML;
 }
