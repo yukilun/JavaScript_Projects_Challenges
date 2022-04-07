@@ -45,6 +45,12 @@ const projects = [
         url: 'catEyesMoving/',
         img: 'main_img/catEyesMoving.png'
     }
+    ,{
+        number: 9,
+        name: 'Photo Gallery 3D',
+        url: 'photoGallery3D/',
+        img: 'main_img/photoGallery3D.png'
+    }
 ];
 
 var projectList = document.getElementById("projectList");

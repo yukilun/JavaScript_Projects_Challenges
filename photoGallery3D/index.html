@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5ac12c9c1d.js" crossorigin="anonymous"></script>
+    <script src="js/photogallery3D.js" defer></script>
+</head>
+<body>
+    <h1>- PHOTO GALLERY -</h1>
+    <div id="container">
+        <img src="https://picsum.photos/id/213/500/500" alt="" id="img00" class="imgleft" onclick="showImg(this.id)">
+        <img src="https://picsum.photos/id/1016/500/500" alt="" id="img01" class="imgleft" onclick="showImg(this.id)">
+        <img src="https://picsum.photos/id/1018/500/500" alt="" id="img02" class="imgleft" onclick="showImg(this.id)">
+        <img src="https://picsum.photos/id/1015/500/500" alt="" id="img03" class="imgshow" onclick="showImg(this.id)">
+        <img src="https://picsum.photos/id/1043/500/500" alt="" id="img04" class="imgright" onclick="showImg(this.id)">
+        <img src="https://picsum.photos/id/110/500/500" alt="" id="img05" class="imgright" onclick="showImg(this.id)">
+        <img src="https://picsum.photos/id/199/500/500" alt="" id="img06" class="imgright" onclick="showImg(this.id)">
+    </div>
+    <div id="buttons">
+        <i class="fa-solid fa-circle-chevron-left" onclick="showNextImg(event,-1)"></i>
+        <i class="fa-solid fa-circle-chevron-right" onclick="showNextImg(event,1)"></i>
+    </div>
+</body>
+</html>

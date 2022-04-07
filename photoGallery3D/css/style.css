@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Secular One', sans-serif;
+    color: #525252;
+}
+
+html{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    padding: 20px 0px;
+    box-sizing: border-box;
+}
+
+h1{
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 40px;
+}
+
+div#container{
+    width: 90%;
+    max-width: 1300px;
+    margin: auto;
+    position: relative;
+    overflow: visible;
+}
+
+img{
+    position: absolute;
+    max-width: 500px;
+    width: 70%;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    filter: brightness(120%) saturate(70%);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+img.imgleft{
+    transform-origin: left top; 
+    transform:  rotateY(50deg) scale(0.8) skewY(10deg);
+    filter: brightness(120%) saturate(70%) opacity(0.7);
+}
+
+img.imgright{
+    transform-origin: right top; 
+    transform:  rotateY(-50deg) scale(0.85) skewY(-10deg);
+    filter: brightness(120%) saturate(70%) opacity(0.7);
+}
+
+img.imgleft:hover, img.imgright:hover{
+    filter: brightness(120%) saturate(70%);
+}
+
+img.imgshow{
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.8);
+}
+
+div#buttons{
+    padding-top: 50px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.fa-circle-chevron-left, .fa-circle-chevron-right{
+    font-size: 40px;
+    margin: 0px 20px;
+    cursor: pointer;
+}
+.fa-circle-chevron-left:hover, .fa-circle-chevron-right:hover{
+    color: #353535;
+}
+
+.buttonClick{
+    transform: scale(0.9);
+}
+
+@media only screen and (max-width: 425px) {
+    h1{
+        font-size: 30px;
+    }
+}
