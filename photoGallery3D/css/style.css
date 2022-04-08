@@ -86,6 +86,7 @@ div#buttons{
 div#darkModeButton{
     text-align: center;
     margin: 30px 0px;
+    cursor: pointer;
 }
 
 span#icons{
@@ -109,7 +110,6 @@ span#toggleButton{
     left: 5px;
     top: 50%;
     transform: translateY(-50%);
-    cursor: pointer;
     transition: 0.5s;
 }
 
