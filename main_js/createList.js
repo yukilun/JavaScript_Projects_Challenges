@@ -7,7 +7,7 @@ const projects = [
     }
     ,{
         number: 2,
-        name: 'Cat Eye Moving',
+        name: 'Cat Eyes Moving',
         url: 'catEyesMoving/',
         img: 'main_img/catEyesMoving.png'
     }
