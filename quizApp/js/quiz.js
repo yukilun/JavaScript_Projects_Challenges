@@ -16,6 +16,7 @@ var questions = [
 var scores = 0;
 
 generateQuestion(0);
+generateInitalProgressBar();
 
 function generateQuestion(index){
     
@@ -46,6 +47,63 @@ function generateQuestion(index){
 
 }
 
+// function generateProgressBar(index){
+
+//     var progressBarHTML = "<div class='circle shown'>1</div>";
+
+//     for(var i = 1; i < questions.length; i++){
+      
+//         if(i <= index){
+//             progressBarHTML+= "<div class='bar shown'></div>";
+//             progressBarHTML+= "<div class='circle shown'>" + (i+1) + "</div>";
+//         }
+//         else{
+//             progressBarHTML+= "<div class='bar'></div>";
+//             progressBarHTML+= "<div class='circle'>" + (i+1) + "</div>";
+//         }
+//     }
+
+//     if(index >= questions.length){
+//         progressBarHTML+= "<div class='bar shown'></div>";
+//         progressBarHTML+= "<div class='circle shown'><i class='fa-solid fa-check'></i></div>";
+//     }
+//     else{
+//         progressBarHTML+= "<div class='bar'></div>";
+//         progressBarHTML+= "<div class='circle'><i class='fa-solid fa-check'></i></div>";
+//     }
+
+//     document.getElementById("progressBar").innerHTML = progressBarHTML;
+
+// }
+
+function generateInitalProgressBar(){
+
+    var progressBarHTML = "<div class='circle shown'>1</div>";
+
+    for(var i = 1; i < questions.length; i++){
+        progressBarHTML+= "<div class='barbg'><div class='bar'></div></div>";
+        progressBarHTML+= "<div class='circle'>" + (i+1) + "</div>";
+    }
+
+    progressBarHTML+= "<div class='barbg'><div class='bar'></div></div>";
+    progressBarHTML+= "<div class='circle'><i class='fa-solid fa-check'></i></div>";
+
+    document.getElementById("progressBar").innerHTML = progressBarHTML;
+
+}
+
+function changeProgressBar(index){
+
+    var circles = document.querySelectorAll(".circle");
+    var bars = document.querySelectorAll(".bar");
+
+    for(var i = 1; i <= index; i++){
+        bars[i-1].classList.add("shown");
+        circles[i].classList.add("shown");
+    }
+
+}
+
 function nextQuestion(index){
     var buttons = document.getElementsByName("question");    
     var selectedchoice = -1;
@@ -60,6 +118,7 @@ function nextQuestion(index){
         else{
             if(questions[index].answer == selectedchoice) scores++;
             generateQuestion(index+1);
+            changeProgressBar(index+1);
         }
     },100);
 
@@ -68,6 +127,7 @@ function nextQuestion(index){
 function resetQuestion(){
     scores = 0;
     generateQuestion(0);
+    generateInitalProgressBar();
 }
 
 

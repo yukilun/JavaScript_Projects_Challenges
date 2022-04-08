@@ -9,6 +9,7 @@ body{
     height: 100vh;
     background-color: #F3F3FB;
     display: flex;
+    flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
 }
@@ -56,4 +57,49 @@ div#nextQuestion{
 
 div#nextQuestion:hover{
     background-color: #3356b6;
+}
+
+section#progressBar{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: baseline;
+    align-items: center;
+    padding: 30px 5px;
+}
+
+div.circle{
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    background-color: white;
+    border: 3px solid lightgray;
+    color:gray;
+    border-radius: 50%;
+    text-align: center;
+}
+
+div.barbg{
+    height: 3px;
+    width: 30px;
+    background-color: lightgray;
+    position: relative;
+}
+
+div.bar{
+    position: absolute;
+    height: 3px;
+    width: 0px;
+    top:0;
+    left:0;
+    background-color: #4370E7;
+    transition: 0.25s;
+}
+
+div.circle.shown{
+    color:black;
+    border: 3px solid #4370E7;
+    transition: 0.25s;
+}
+div.bar.shown{
+    width: 30px;
 }
