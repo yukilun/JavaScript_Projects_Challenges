@@ -12,18 +12,29 @@
 </head>
 <body>
     <h1>- PHOTO GALLERY -</h1>
-    <div id="container">
-        <img src="https://picsum.photos/id/213/500/500" alt="" id="img00" class="imgleft" onclick="showImg(this.id)">
-        <img src="https://picsum.photos/id/1016/500/500" alt="" id="img01" class="imgleft" onclick="showImg(this.id)">
-        <img src="https://picsum.photos/id/1018/500/500" alt="" id="img02" class="imgleft" onclick="showImg(this.id)">
-        <img src="https://picsum.photos/id/1015/500/500" alt="" id="img03" class="imgshow" onclick="showImg(this.id)">
-        <img src="https://picsum.photos/id/1043/500/500" alt="" id="img04" class="imgright" onclick="showImg(this.id)">
-        <img src="https://picsum.photos/id/110/500/500" alt="" id="img05" class="imgright" onclick="showImg(this.id)">
-        <img src="https://picsum.photos/id/199/500/500" alt="" id="img06" class="imgright" onclick="showImg(this.id)">
+
+    <div id="darkModeButton">
+        <span id="icons">
+            <i class="fa-solid fa-moon">&nbsp;&nbsp;&nbsp;</i>
+            <i class="fa-solid fa-sun"></i>
+            <span id="toggleButton" onclick="changeMode()"></span>
+        </span>
     </div>
+
+    <div id="container">
+        <img src="https://picsum.photos/id/213/450/450" alt="" id="img00" class="imgleft" onclick="showImg(this.id)">
+        <img src="https://picsum.photos/id/1016/450/450" alt="" id="img01" class="imgleft" onclick="showImg(this.id)">
+        <img src="https://picsum.photos/id/1018/450/450" alt="" id="img02" class="imgleft" onclick="showImg(this.id)">
+        <img src="https://picsum.photos/id/1015/450/450" alt="" id="img03" class="imgshow" onclick="showImg(this.id)">
+        <img src="https://picsum.photos/id/1043/450/450" alt="" id="img04" class="imgright" onclick="showImg(this.id)">
+        <img src="https://picsum.photos/id/110/450/450" alt="" id="img05" class="imgright" onclick="showImg(this.id)">
+        <img src="https://picsum.photos/id/199/450/450" alt="" id="img06" class="imgright" onclick="showImg(this.id)">
+    </div>
+
     <div id="buttons">
         <i class="fa-solid fa-circle-chevron-left" onclick="showNextImg(event,-1)"></i>
         <i class="fa-solid fa-circle-chevron-right" onclick="showNextImg(event,1)"></i>
     </div>
+    
 </body>
 </html>

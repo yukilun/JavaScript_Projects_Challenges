@@ -47,9 +47,9 @@ function showNextImg(e,num){
 function displayImages(){
     currentWindowWidth = window.outerWidth;
     var images = document.querySelectorAll("img");
-    var totalWidth = Math.min(currentWindowWidth * 0.9, 1300);
-    var showPhotoWidth = Math.min(totalWidth * 0.7, 500);
-    var showPhotoHeight = 500/500 *  showPhotoWidth;
+    var totalWidth = Math.min(currentWindowWidth * 0.9, 1200);
+    var showPhotoWidth = Math.min(totalWidth * 0.7, 450);
+    var showPhotoHeight = 450/450 *  showPhotoWidth;
     var otherPhotoDisplayWidth = (totalWidth - showPhotoWidth) / (numberofPhoto - 1);
 
     container.style.height = showPhotoHeight + "px";
@@ -83,4 +83,11 @@ function displayImages(){
 
     }
 
+}
+
+
+function changeMode(){
+    document.getElementById("toggleButton").classList.toggle("dark");
+    document.getElementById("icons").classList.toggle("dark");
+    document.querySelector("html").classList.toggle("dark");
 }

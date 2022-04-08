@@ -2,13 +2,14 @@
     padding: 0;
     margin: 0;
     font-family: 'Secular One', sans-serif;
-    color: #525252;
 }
 
 html{
     width: 100%;
     height: 100%;
+    color: #525252;
     background-color: white;
+    transition: 0.5s;
 }
 
 body{
@@ -19,14 +20,14 @@ body{
 }
 
 h1{
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     text-align: center;
     font-size: 40px;
 }
 
 div#container{
     width: 90%;
-    max-width: 1300px;
+    max-width: 1200px;
     margin: auto;
     position: relative;
     overflow: visible;
@@ -34,7 +35,7 @@ div#container{
 
 img{
     position: absolute;
-    max-width: 500px;
+    max-width: 450px;
     width: 70%;
     border-radius: 30px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
@@ -64,7 +65,7 @@ img.imgshow{
 }
 
 div#buttons{
-    padding-top: 50px;
+    padding-top: 40px;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -72,19 +73,64 @@ div#buttons{
 }
 
 
-
 .fa-circle-chevron-left, .fa-circle-chevron-right{
     font-size: 40px;
     margin: 0px 20px;
     cursor: pointer;
 }
-.fa-circle-chevron-left:hover, .fa-circle-chevron-right:hover{
-    color: #353535;
-}
 
 .buttonClick{
     transform: scale(0.9);
 }
+
+div#darkModeButton{
+    text-align: center;
+    margin: 30px 0px;
+}
+
+span#icons{
+    color: white;
+    background-color: #525252;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 5px 10px;
+    border-radius: 30px;
+    position: relative;
+    transition: 0.5s;
+}
+
+span#toggleButton{
+    content: "";
+    background-color: white;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+span#toggleButton.dark{
+    background-color: #525252; 
+    left: calc(100% - 33px);
+    transition: 0.5s;
+}
+
+span#icons.dark{
+    color: #525252;
+    background-color: white;
+    transition: 0.5s;
+}
+
+html.dark{
+    color: white;
+    background-color: #525252;
+    transition: 0.5s;
+}
+
 
 @media only screen and (max-width: 425px) {
     h1{
