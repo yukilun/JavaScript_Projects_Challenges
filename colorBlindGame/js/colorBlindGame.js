@@ -84,10 +84,23 @@ function generateQuestion(){
         numberOfChoice = 16;
         correctColorSaturation = colorSaturation + ((Math.floor(Math.random()*2)) == 0? -10: 10);
     }
+    else if(score < 80){
+        numberOfChoice = 16;
+        correctColorSaturation = colorSaturation + ((Math.floor(Math.random()*2)) == 0? -8: 8);
+    }
+    else if(score < 90){
+        numberOfChoice = 16;
+        correctColorSaturation = colorSaturation + ((Math.floor(Math.random()*2)) == 0? -6: 6);
+    }
+    else if(score < 100){
+        numberOfChoice = 16;
+        correctColorSaturation = colorSaturation + ((Math.floor(Math.random()*2)) == 0? -4: 4);
+    }
     else{
         numberOfChoice = 16;
-        correctColorSaturation = colorSaturation + ((Math.floor(Math.random()*2)) == 0? -10: 10);
+        correctColorSaturation = colorSaturation + ((Math.floor(Math.random()*2)) == 0? -2: 2);
     }
+    
 
     if(numberOfChoice == 4){
         gameArea.classList.add("grid4");
