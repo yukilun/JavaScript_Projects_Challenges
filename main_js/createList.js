@@ -29,32 +29,38 @@ const projects = [
         url: 'matchingGame/',
         img: 'main_img/matchingGame.png'
     }
-    ,{
+    ,{  
         number: 7,
+        name: 'Rock Paper Scissors Game',
+        url: 'rockPaperScissors/',
+        img: 'main_img/rockPaperScissors.png'
+    }
+    ,{
+        number: 8,
         name: 'Quiz App',
         url: 'quizApp/',
         img: 'main_img/quizApp.png'
     }
     ,{
-        number: 7,
+        number: 9,
         name: 'New Year Countdown',
         url: 'countdown/',
         img: 'main_img/countdown.png'
     }
     ,{
-        number: 8,
+        number: 10,
         name: 'Notes Taker',
         url: 'noteTakerApp/',
         img: 'main_img/noteTakerApp.png'
     }
     ,{
-        number: 10,
+        number: 11,
         name: 'To Do List',
         url: 'toDoList/',
         img: 'main_img/toDoList.png'
     }
     ,{
-        number: 11,
+        number: 12,
         name: 'Vowel Counter',
         url: 'vowelCounter/',
         img: 'main_img/vowelCounter.png'

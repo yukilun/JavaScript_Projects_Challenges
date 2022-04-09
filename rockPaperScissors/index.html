@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5ac12c9c1d.js" crossorigin="anonymous"></script>
+    <script src="js/game.js" defer></script>
+</head>
+<body>
+
+    <h1>Rock Paper Scissors!</h1>
+
+    <!-- <label>
+        Number of Player: &nbsp;
+    <input type="number" id="playerNum" value="1" min="1" max="2" step="1"/>
+    </label> -->
+
+    <p id="result">Battle!</p>
+    <p id='restart' onclick="restart()">Next Game</p>
+
+    <div id="gameArea">
+        <div id="player1">
+            <h2>Player</h2>
+            <p>Score:&nbsp;&nbsp;0</p>
+            <div><i class="fa-solid fa-hand-fist" onclick="playGame('rock')"></i></div>
+            <div><i class="fa-solid fa-hand" onclick="playGame('paper')"></i></div>
+            <div><i class="fa-solid fa-hand-peace" onclick="playGame('scissor')"></i></div>
+        </div>
+    
+        <div id="resultIcons">
+            <div id="player1-Result">
+                <div><i class="fa-solid fa-hand-fist"></i></div>
+                <div><i class="fa-solid fa-hand"></i></div>
+                <div><i class="fa-solid fa-hand-peace"></i></div>
+            </div>
+        
+            <div id="player2-Result">
+                <div><i class="fa-solid fa-hand-fist"></i></div>
+                <div><i class="fa-solid fa-hand"></i></div>
+                <div><i class="fa-solid fa-hand-peace"></i></div>
+            </div>
+        </div>
+    
+        <div id="player2">
+            <h2>NPC</h2>
+            <p>Score:&nbsp;&nbsp;0</p>
+            <div><i class="fa-solid fa-hand-fist"></i></div>
+            <div><i class="fa-solid fa-hand"></i></div>
+            <div><i class="fa-solid fa-hand-peace"></i></div>
+        </div> 
+    </div>
+
+</body>
+</html>
