@@ -3,7 +3,9 @@ var timerTimeOut;
 
 var numberOfChoice = 4;
 var score = 0;
-var wrongChoice;
+var correctChoice;
+
+var loopHighlightCorrectChoice;
 
 const startBtn = document.getElementById("startBtn");
 const timer = document.getElementById("timer");
@@ -133,12 +135,24 @@ function selectChoice(choice){
     }
 }
 
+function highlightCorrectChoice(){
+    var choices = document.querySelectorAll("#gameArea div");
+    choices[correctChoice].classList.toggle('correct');
+}
+
+
 function displayResult(){
-    gameOverMsg.classList.toggle('show');
+    loopHighlightCorrectChoice = setInterval(highlightCorrectChoice, 250);
+    gameOverMsg.classList.toggle('correct');
+    setTimeout(()=>{gameOverMsg.classList.toggle('correct')}, 1500);
+    setTimeout(()=>{gameOverMsg.classList.toggle('show')}, 1500);
     msgScore.innerHTML = score;
 }
 
 function resetGame(){
+    clearInterval(loopHighlightCorrectChoice);
+    var choices = document.querySelectorAll("#gameArea div");
+    choices[correctChoice].remove('correct');
     score = 0;
     currentTime = 5000;
     gameOverMsg.classList.toggle('show');
@@ -147,6 +161,9 @@ function resetGame(){
 }
 
 function quitGame(){
+    clearInterval(loopHighlightCorrectChoice);
+    var choices = document.querySelectorAll("#gameArea div");
+    choices[correctChoice].remove('correct');
     score = 0;
     currentTime = 5000;
     gameOverMsg.classList.toggle('show');

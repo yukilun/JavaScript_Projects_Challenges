@@ -102,6 +102,12 @@ button:hover {
     margin: 10px;
     border-radius: 10px;
     cursor: pointer;
+    transition: box-shadow 0.25s;
+}
+
+#gameArea > div.correct{
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    transition: box-shadow 0.25s;
 }
 
 #gameArea.grid4 > div{
@@ -126,8 +132,14 @@ button:hover {
     align-items: center;
 }
 
+#gameOver.correct{
+    display: flex;
+    opacity: 0;
+}
+
 #gameOver.show{
     display: flex;
+    opacity: 1;
 }
 
 #messageBox{
