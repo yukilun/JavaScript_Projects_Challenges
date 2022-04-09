@@ -34,7 +34,7 @@ function playGame(player1OptionName){
     var player1Results = document.querySelectorAll("div#player1-Result div");
     var npcResults = document.querySelectorAll("div#player2-Result div");
 
-    var npcRandomOption = Math.floor(Math.random() * 2);
+    var npcRandomOption = Math.floor(Math.random() * 3);
     var npcOptionName = gameOptions[npcRandomOption];
     
     var player1Option = -1;
