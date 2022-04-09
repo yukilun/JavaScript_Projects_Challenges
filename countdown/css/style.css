@@ -21,21 +21,27 @@ body{
 }
 
 h1{
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
     padding: 5% 0;
     letter-spacing: 0.05em;
 }
 
 section#countdown{
-    width: 90%;
+    width: 80%;
     max-width: 800px;
     margin: 20px auto;
-    display: flex;
+    /* display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: space-around; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 section#countdown > div{
-    flex: 0 0 100px;
+    /* flex: 0 0 100px; */
+    margin: 10px 0px;
 }
 
 div h2{
@@ -49,3 +55,8 @@ div p{
     line-height: 20px;
 }
 
+@media only screen and (min-width:426px) {
+    section#countdown{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
