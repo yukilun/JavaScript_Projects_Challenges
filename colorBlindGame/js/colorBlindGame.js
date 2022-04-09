@@ -22,10 +22,23 @@ function startGame(){
 
 function startTimer(){
 
-    console.log(currentTime);
     timerBar.style.width = (100 * currentTime / 5000) + "%";
 
     if(currentTime > 0){
+
+        if(currentTime >= 4000){
+            timerBar.style.backgroundColor = "rgb(71, 120, 160)";
+            timerBar.style.boxShadow = "none";
+        }
+        else if(currentTime >= 2000){
+            timerBar.style.backgroundColor = "rgb(160, 111, 71)";
+            timerBar.style.boxShadow = "none";
+        }
+        else{
+            timerBar.style.backgroundColor = "rgb(160, 71, 71)";
+            timerBar.style.boxShadow = "0 0 15px rgb(160, 71, 71)";
+        }
+
         currentTime -= 100;
         timerTimeOut = setTimeout(startTimer,100);
     }
