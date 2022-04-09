@@ -26,7 +26,7 @@ h1{
 }
 
 div#cards{
-    max-width: 400px;
+    max-width: 480px;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -35,8 +35,8 @@ div#cards{
 
 div#cards > div {
     box-sizing: border-box;
-    width: 125px;
-    height: 125px;
+    width: 150px;
+    height: 150px;
     margin: 3px;
     border-radius: 5px;
     background: slategray;
@@ -73,4 +73,11 @@ table#scoreBoard th{
 
 table#scoreBoard td{
     text-align: right;
+}
+
+@media only screen and (max-width: 425px){
+    div#cards > div {
+        width: 125px;
+        height: 125px;
+    }
 }
