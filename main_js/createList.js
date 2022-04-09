@@ -17,6 +17,12 @@ const projects = [
         url: 'photoGallery3D/',
         img: 'main_img/photoGallery3D.png'
     }
+    ,{
+        number: 4,
+        name: 'Color Blind Game',
+        url: 'colorBlindGame/',
+        img: 'main_img/colorBlindGame.png'
+    }
     ,{  
         number: 5,
         name: 'Mood Calendar',
