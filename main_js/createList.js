@@ -31,7 +31,7 @@ const projects = [
     }
     ,{  
         number: 7,
-        name: 'Rock Paper Scissors Game',
+        name: 'Rock Paper Scissors',
         url: 'rockPaperScissors/',
         img: 'main_img/rockPaperScissors.png'
     }
