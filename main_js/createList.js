@@ -1,9 +1,9 @@
 const projects = [
     {
         number: 1,
-        name: 'Mood Calendar',
-        url: 'moodCalendar/',
-        img: 'main_img/moodCalendar.png'
+        name: 'Clock',
+        url: 'clock/',
+        img: 'main_img/clock.png'
     }
     ,{
         number: 2,
@@ -18,20 +18,16 @@ const projects = [
         img: 'main_img/photoGallery3D.png'
     }
     ,{  
-        number: 4,
+        number: 5,
+        name: 'Mood Calendar',
+        url: 'moodCalendar/',
+        img: 'main_img/moodCalendar.png'
+    }
+    ,{  
+        number: 6,
         name: 'Matching Game',
         url: 'matchingGame/',
         img: 'main_img/matchingGame.png'
-    },{
-        number: 5,
-        name: 'New Year Countdown',
-        url: 'countdown/',
-        img: 'main_img/countdown.png'
-    },{
-        number: 6,
-        name: 'Notes Taker',
-        url: 'noteTakerApp/',
-        img: 'main_img/noteTakerApp.png'
     }
     ,{
         number: 7,
@@ -40,13 +36,25 @@ const projects = [
         img: 'main_img/quizApp.png'
     }
     ,{
+        number: 7,
+        name: 'New Year Countdown',
+        url: 'countdown/',
+        img: 'main_img/countdown.png'
+    }
+    ,{
         number: 8,
+        name: 'Notes Taker',
+        url: 'noteTakerApp/',
+        img: 'main_img/noteTakerApp.png'
+    }
+    ,{
+        number: 10,
         name: 'To Do List',
         url: 'toDoList/',
         img: 'main_img/toDoList.png'
     }
     ,{
-        number: 9,
+        number: 11,
         name: 'Vowel Counter',
         url: 'vowelCounter/',
         img: 'main_img/vowelCounter.png'
