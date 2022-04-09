@@ -11,7 +11,6 @@ html{
 }
 
 body{
-    min-height: 100vh;
     height: 100%;
     width: 100%;
     background: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
@@ -27,7 +26,7 @@ h1{
 }
 
 div#cards{
-    max-width: 400px;
+    max-width: 480px;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -36,8 +35,8 @@ div#cards{
 
 div#cards > div {
     box-sizing: border-box;
-    width: 125px;
-    height: 125px;
+    width: 150px;
+    height: 150px;
     margin: 3px;
     border-radius: 5px;
     background: slategray;
