@@ -185,6 +185,55 @@ table.empty{
     cursor:auto;
 }
 
+div#repo{
+    margin: 5px 0px 20px;
+    color: #2c4849;
+    text-align: center;
+    line-height: 30px;
+}
+div#repo a{
+    display: inline-block;
+    color: #b2cfcf;
+    text-decoration: none;
+    font-weight: 500;
+    break-inside: avoid;
+}
+div#repo a i{
+    font-size: 25px;
+}
+div#repo a:hover{
+    color: #d3e2e2;
+}
+
+hr{
+    border: 0.25px solid #385b5c;
+}
+
+footer{
+    margin: 20px 0px;
+}
+
+footer div#socialMedia{
+    padding: 5px 0 10px;
+    text-align: center;
+}
+
+footer div#socialMedia a{
+    padding: 0px 5px;
+    color: #b2cfcf;
+    font-size: 25px;
+}
+
+footer div#socialMedia a:hover{
+    color: #d3e2e2;
+}
+
+footer p{
+    color: #2c4849;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
 ::-webkit-scrollbar {
     width: 20px;
 }
