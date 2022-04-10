@@ -206,7 +206,9 @@ div#repo a:hover{
 }
 
 hr{
-    border: 0.25px solid #385b5c;
+    height: 1px;
+    background-color:#385b5c;
+    border: none;
 }
 
 footer{
