@@ -41,32 +41,38 @@ const projects = [
         url: 'rockPaperScissors/',
         img: 'main_img/rockPaperScissors.png'
     }
-    ,{
+    ,{  
         number: 8,
+        name: 'WordFill',
+        url: 'wordFill/',
+        img: 'main_img/wordFill.png'
+    }
+    ,{
+        number: 9,
         name: 'Quiz App',
         url: 'quizApp/',
         img: 'main_img/quizApp.png'
     }
     ,{
-        number: 9,
+        number: 10,
         name: 'New Year Countdown',
         url: 'countdown/',
         img: 'main_img/countdown.png'
     }
     ,{
-        number: 10,
+        number: 11,
         name: 'Notes Taker',
         url: 'noteTakerApp/',
         img: 'main_img/noteTakerApp.png'
     }
     ,{
-        number: 11,
+        number: 12,
         name: 'To Do List',
         url: 'toDoList/',
         img: 'main_img/toDoList.png'
     }
     ,{
-        number: 12,
+        number: 13,
         name: 'Vowel Counter',
         url: 'vowelCounter/',
         img: 'main_img/vowelCounter.png'

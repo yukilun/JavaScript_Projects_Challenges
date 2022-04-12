@@ -58,7 +58,7 @@ function displayWord(){
     wordsHTML += "<div id='chance'>CHANCES: <span>";
     
     for(var i = 0; i < chance; i++){
-        wordsHTML += "&#9829; ";
+        wordsHTML += "&#10084; ";
     }
     wordsHTML += "</span></div>";
     wordsHTML += "<div id='score'>SCORE: <span>" + score + "</span></div></div>";
@@ -140,7 +140,7 @@ function checkWord(){
         chance--;
         var chanceHTML = "";
         for(var i = 0; i < chance; i++){
-            chanceHTML += "&#9829; ";
+            chanceHTML += "&#10084; ";
         }
         document.querySelector('#chance span').innerHTML = chanceHTML;
 
