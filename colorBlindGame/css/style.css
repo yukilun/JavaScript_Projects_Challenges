@@ -128,23 +128,32 @@ button:hover {
     position: fixed;
     background-color: rgba(0,0,0,0.5);
     display: none;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+#gameOver::after{
+    content: "";
+    display: table;
 }
 
 #gameOver.correct{
-    display: flex;
+    display: block;   
+    /* display: flex; */
     opacity: 0;
 }
 
 #gameOver.show{
-    display: flex;
+    display: block;  
+    /* display: flex; */
     opacity: 1;
 }
 
 #messageBox{
+    position: relative;
     width: 90%;
     max-width: 300px;
+    margin: auto;
     padding: 10px;
     background-color: rgb(212, 212, 212);
     border-radius: 10px;
@@ -152,7 +161,15 @@ button:hover {
     flex-flow: column nowrap;
     justify-content: space-around;
     align-items: center;
+    animation: slideFromTop 0.5s forwards 1.5s;
 }
+
+
+@keyframes slideFromTop {
+    from{top: 0%; opacity: 0;}
+    to{top: 50%; transform: translateY(-50%); opacity: 1;}
+}
+
 
 #message{
     color: rgb(29, 29, 29);
@@ -169,7 +186,6 @@ div#gameOverBtns{
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    
 }
 
 #resetBtn, #quitBtn{
