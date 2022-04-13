@@ -146,7 +146,9 @@ function checkWord(){
 
 
         if(chance == 0){
-            pupupMsg.innerHTML = "Wrong Answer!<br/><br/>Game Over!<br/><br/>Your score:<br/><span>" + score + "</span>";
+            pupupMsg.innerHTML = "Game Over!<br/><br/>";
+            pupupMsg.innerHTML += "The Correct Answer:<br/><span>" + targetWord + "</span><br/><br/>";
+            pupupMsg.innerHTML += "Your Score:<br/><span>" + score + "</span>";
             popup.style.display = "block";
             popupBtn.innerHTML = "<button onclick='closePopupReset()'>HOME</button>";
         }
