@@ -140,6 +140,12 @@ div#projectList{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     margin-bottom: 20px;
+    animation: slideFromLeft 3s forwards;
+}
+
+@keyframes slideFromLeft {
+    from{transform: translateX(-50%); opacity: 0;}
+    to{transform: none; opacity: 1;}
 }
 
 table{
