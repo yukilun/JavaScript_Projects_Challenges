@@ -141,7 +141,9 @@ div#projectList{
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     margin-bottom: 20px;
 }
-
+a{
+    text-decoration: none;
+}
 table{
     margin: 20px 10px;
     color: #d3e2e2;
