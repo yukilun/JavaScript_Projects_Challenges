@@ -104,7 +104,7 @@ function generateList(){
     var projectHTML = "";
 
     searchedProject.forEach(project=>{
-        projectHTML+="<a href=" + project.url + " target=`_blank`><table>";
+        projectHTML+="<a href=" + project.url + " target='_blank'><table>";
         // projectHTML+="<table onclick='location.href=`" + project.url+ "`'>";
         projectHTML+="<tr><th>#"+project.number+"</th><th>"+project.name+"</th></tr>";
         projectHTML+="<tr><td colspan='2'><img src="+project.img+" alt=''/></td></tr>";
