@@ -1,15 +1,16 @@
 let imageURLs = [
-  '/img/top1.png',
-  '/img/top2.png',
-  '/img/bottom1.png',
-  '/img/bottom2.png',
-  '/img/bottom3.png',
-  '/img/hat1.png',
-  '/img/hat2.png',
-  '/img/bag1.png',
-  '/img/bag2.png',
+  'img/top1.png',
+  'img/top2.png',
+  'img/bottom1.png',
+  'img/bottom2.png',
+  'img/bottom3.png',
+  'img/hat1.png',
+  'img/hat2.png',
+  'img/bag1.png',
+  'img/bag2.png',
 ];
 
+const Path = ''
 const container = document.querySelector('.Board');
 const buttons = document.querySelector('.Buttons');
 let buttonsHeight;
