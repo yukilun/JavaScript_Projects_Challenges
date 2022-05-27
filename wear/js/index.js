@@ -10,7 +10,7 @@ let imageURLs = [
   'img/bag2.png',
 ];
 
-const Path = ''
+const Path = 'https://yukilun.github.io/JavaScript_Projects_Challenges/wear/';
 const container = document.querySelector('.Board');
 const buttons = document.querySelector('.Buttons');
 let buttonsHeight;
@@ -38,7 +38,7 @@ window.addEventListener('resize',resizeCanvas);
 function createPanel(){
     let panelHTML = "";
     imageURLs.forEach((url)=>{
-        panelHTML += `<div class='Item'><img src=${url} alt='' /></div>`;
+        panelHTML += `<div class='Item'><img src=${Path + url} alt='' /></div>`;
     });
 
     document.querySelector('.Panel').innerHTML = panelHTML;

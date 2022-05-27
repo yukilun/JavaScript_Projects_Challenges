@@ -63,6 +63,22 @@ body {
     transform: scale(1.05);
 }
 
+/* .Item:hover::after{
+    content: '+';
+    display: block;
+    height: 50px;
+    width: 50px;
+    font-size: 45px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    border-radius: 50%;
+    background-color: white;
+    color: rgb(109, 109, 109);
+    opacity: 50%;
+  } */
+
 /* Hide scrollbar for Chrome, Safari and Opera */
 .Panel::-webkit-scrollbar {
     display: none;
