@@ -37,8 +37,8 @@ document.querySelector('#closeButton').addEventListener('click', ()=>{
 
 function resizeCanvas(){
     buttonsHeight = buttons.clientHeight;
-    canvasWidth = container.clientWidth - 40;
-    canvasHeight = container.clientHeight - buttonsHeight - 40;
+    canvasWidth = container.clientWidth - 50;
+    canvasHeight = container.clientHeight - buttonsHeight - 50;
     canvas.setDimensions({width: canvasWidth, height: canvasHeight});
 }
 
