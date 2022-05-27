@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100vh;
+    background-color: rgb(233, 227, 215);
+}
+
+body {
+    width: 90%;
+    height: 90%;
+    margin: auto;
+}
+
+.App {
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.Panel {
+    height: 100%;
+    width: 20%;
+    min-width: 200px;
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    overflow: auto;
+}
+
+.Board {
+    height: 100%;
+    width: 80%;
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.Item {
+    display: block;
+    text-align: justify;
+    text-align-last: center;
+    width: 150px;
+    height: 150px;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+.Item img {
+    max-width: 100%;
+    max-height: 100%;
+    position: relative;
+}
+
+.Item:hover {
+    transform: scale(1.05);
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.Panel::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.Panel {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+canvas {
+    border: 2px solid rgb(247, 243, 235);
+    border-radius: 10px;
+}
+
+.Buttons {
+    text-align: center;
+}
+
+.Buttons>* {
+    border: 0;
+    background-color: rgb(233, 227, 215);
+    color: white;
+    height: 40px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.Buttons>*:hover {
+    background-color: rgb(211, 202, 185);
+}
+
+
+#up,
+#upup,
+#down,
+#downdown {
+    border-radius: 50%;
+    width: 40px;
+}
+
+#clear,
+#delete {
+    padding: 0 10px;
+    border-radius: 10px;
+}
