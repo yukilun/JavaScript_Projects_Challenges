@@ -26,10 +26,19 @@ let canvas = new fabric.Canvas('canvas',{
 window.setTimeout(resizeCanvas, 100);
 createPanel();
 
+document.querySelector('#addButton').addEventListener('click', ()=>{
+    document.querySelector('.Panel').classList.add('active');
+})
+
+document.querySelector('#closeButton').addEventListener('click', ()=>{
+    document.querySelector('.Panel').classList.remove('active');
+})
+
+
 function resizeCanvas(){
     buttonsHeight = buttons.clientHeight;
-    canvasWidth = container.clientWidth - 60;
-    canvasHeight = container.clientHeight - buttonsHeight - 60;
+    canvasWidth = container.clientWidth - 40;
+    canvasHeight = container.clientHeight - buttonsHeight - 40;
     canvas.setDimensions({width: canvasWidth, height: canvasHeight});
 }
 
@@ -41,22 +50,19 @@ function createPanel(){
         panelHTML += `<div class='Item'><img src=${Path + url} alt='' /></div>`;
     });
 
-    document.querySelector('.Panel').innerHTML = panelHTML;
+    document.querySelector('.Panel').insertAdjacentHTML('beforeend', panelHTML);
 }
 
 document.querySelectorAll('.Item img').forEach(img=>{
     img.addEventListener('click', addImage);
-    img.addEventListener('dragend',()=>{
-
-    })
 })
 
 function addImage(event){
 
     fabric.Image.fromURL(event.target.src, function(img) {
-        img.set('top', 100);
-        img.set('left', 100);
-        img.scaleToWidth(canvas.width*0.3, false);
+        img.set('top', canvas.height/3);
+        img.set('left', canvas.width/3);
+        img.scaleToHeight(canvas.height*0.3, false);
         img.setControlsVisibility({
             mt: false, 
             mb: false, 
