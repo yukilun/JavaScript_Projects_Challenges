@@ -56,7 +56,7 @@ body {
     font-weight: 500;
 }
 
-#addButton, #closeButton, #up,#upup,#down,#downdown,#clear,#delete  {
+#addButton, #closeButton,#downloadButton, #up,#upup,#down,#downdown,#clear,#delete {
     border: 0;
     background-color: white;
     color:rgb(164, 189, 165);
@@ -71,6 +71,12 @@ body {
 #addButton{
     position: absolute;
     left: 10px;
+    top: 10px;
+}
+
+#downloadButton{
+    position: absolute;
+    right: 10px;
     top: 10px;
 }
 

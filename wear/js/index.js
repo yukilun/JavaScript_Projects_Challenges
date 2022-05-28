@@ -84,6 +84,22 @@ function addImage(event){
 
 }
 
+function downloadImage(){
+    const dataURL = canvas.toDataURL({
+        width: canvas.width,
+        height: canvas.height,
+        left: 0,
+        top: 0,
+        format: 'png',
+   });
+   const link = document.createElement('a');
+   link.download = 'image.png';
+   link.href = dataURL;
+   document.body.appendChild(link);
+   link.click();
+   document.body.removeChild(link);
+};
+
 document.getElementById('up').addEventListener('click', ()=>{
     let obj = canvas.getActiveObject();
     canvas.bringForward(obj);
@@ -112,3 +128,5 @@ document.getElementById('delete').addEventListener('click', ()=>{
     let obj = canvas.getActiveObject();
     canvas.remove(obj);
 });
+
+document.getElementById('downloadButton').addEventListener('click', downloadImage);
