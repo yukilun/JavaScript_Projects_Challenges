@@ -90,10 +90,10 @@ function downloadImage(){
         height: canvas.height,
         left: 0,
         top: 0,
-        format: 'png',
+        format: 'jpg',
    });
    const link = document.createElement('a');
-   link.download = 'image.png';
+   link.download = 'image.jpg';
    link.href = dataURL;
    document.body.appendChild(link);
    link.click();
