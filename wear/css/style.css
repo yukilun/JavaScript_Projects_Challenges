@@ -5,7 +5,6 @@
 }
 
 html {
-    height: 100vh;  
     max-height: -webkit-fill-available;
     background-color: rgb(164, 189, 165);
 }

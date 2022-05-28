@@ -19,8 +19,11 @@ let canvas = new fabric.Canvas('canvas',{
     preserveObjectStacking: true,
 });
 
-window.setTimeout(resizeCanvas, 100);
 createPanel();
+resizeHtml();
+window.addEventListener('resize',()=>{
+    resizeHtml();
+});
 
 document.querySelector('#addButton').addEventListener('click', ()=>{
     document.querySelector('.Panel').classList.add('active');
@@ -31,13 +34,17 @@ document.querySelector('#closeButton').addEventListener('click', ()=>{
 })
 
 
+function resizeHtml(){
+    canvas.setDimensions({width: 1, height: 1});
+    document.body.style.height = window.innerHeight + "px";
+    setTimeout(resizeCanvas, 2000);
+}
+
 function resizeCanvas(){
     canvasWidth = container.clientWidth;
     canvasHeight = container.clientHeight;
     canvas.setDimensions({width: canvasWidth, height: canvasHeight});
 }
-
-window.addEventListener('resize',resizeCanvas);
 
 function createPanel(){
     let panelHTML = "";
