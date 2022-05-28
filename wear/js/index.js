@@ -41,9 +41,11 @@ function resizeHtml(){
 }
 
 function resizeCanvas(){
+    canvas.backgroundColor="white";
     canvasWidth = container.clientWidth;
     canvasHeight = container.clientHeight;
     canvas.setDimensions({width: canvasWidth, height: canvasHeight});
+    canvas.renderAll();
 }
 
 function createPanel(){
@@ -90,10 +92,10 @@ function downloadImage(){
         height: canvas.height,
         left: 0,
         top: 0,
-        format: 'jpg',
+        format: 'png',
    });
    const link = document.createElement('a');
-   link.download = 'image.jpg';
+   link.download = 'image.png';
    link.href = dataURL;
    document.body.appendChild(link);
    link.click();
