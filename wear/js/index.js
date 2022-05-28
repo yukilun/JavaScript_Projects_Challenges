@@ -12,15 +12,11 @@ let imageURLs = [
 
 const Path = 'https://yukilun.github.io/JavaScript_Projects_Challenges/wear/';
 const container = document.querySelector('.Board');
-const buttons = document.querySelector('.Buttons');
-let buttonsHeight;
-let canvasWidth;
-let canvasHeight;
+let canvasWidth = container.clientWidth;
+let canvasHeight = container.clientHeight;
 
 let canvas = new fabric.Canvas('canvas',{
     preserveObjectStacking: true,
-    width: canvasWidth, 
-    height: canvasHeight
 });
 
 window.setTimeout(resizeCanvas, 100);
@@ -36,9 +32,8 @@ document.querySelector('#closeButton').addEventListener('click', ()=>{
 
 
 function resizeCanvas(){
-    buttonsHeight = buttons.clientHeight;
-    canvasWidth = container.clientWidth - 50;
-    canvasHeight = container.clientHeight - buttonsHeight - 50;
+    canvasWidth = container.clientWidth;
+    canvasHeight = container.clientHeight;
     canvas.setDimensions({width: canvasWidth, height: canvasHeight});
 }
 
@@ -69,10 +64,16 @@ function addImage(event){
             ml: false,
             mr: false, 
         })
+        img.set({
+            borderColor: 'rgb(164, 189, 165)',
+            cornerColor: 'rgb(164, 189, 165)',
+        });
         canvas.add(img);
     });
 
     console.log('added');
+    document.querySelector('.Message').classList.add('active');
+    setTimeout(()=>{document.querySelector('.Message').classList.remove('active')}, 500);
 
 }
 

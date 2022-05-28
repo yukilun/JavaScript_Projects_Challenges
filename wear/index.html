@@ -6,31 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wear</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
     <script src="js/fabric.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    <script src="https://kit.fontawesome.com/5ac12c9c1d.js" crossorigin="anonymous"></script>
     <script src="js/index.js" defer></script>
 </head>
 <body>
     <div class="App">
         <div class='Panel'>
             <div class='NavButton'>
-                <button id="closeButton"> &#10006;</button>
+                <button id="closeButton"><i class="fa-solid fa-xmark"></i></button>
             </div>
         </div>
-        <div class='NavButton'>
-            <button id="addButton">+</button>
+        <div class='Banner'>
+            <button id="addButton"><i class="fa-solid fa-plus"></i></button>
+            <div class="Logo">
+                <i class="fa-solid fa-shirt"></i> Wear
+            </div>
         </div>
         <div class='Board'>
             <canvas id="canvas" width="800" height="500"></canvas>
-            <div class="Buttons">
-                <button id="up"><i class="fa-solid fa-angle-up"></i></button>
-                <button id="upup"><i class="fa-solid fa-angles-up"></i></button>
-                <button id="down"><i class="fa-solid fa-angle-down"></i></button>
-                <button id="downdown"><i class="fa-solid fa-angles-down"></i></button> &nbsp;
-                <button id="delete">DELETE</button>
-                <button id="clear">CLEAR ALL</button>
-            </div>
         </div>
+        <div class="Buttons">
+            <button id="up"><i class="fa-solid fa-angle-up"></i></button>
+            <button id="upup"><i class="fa-solid fa-angles-up"></i></button>
+            <button id="down"><i class="fa-solid fa-angle-down"></i></button>
+            <button id="downdown"><i class="fa-solid fa-angles-down"></i></button> &nbsp;
+            <button id="delete"><i class="fa-solid fa-trash-can"></i></button>
+            <button id="clear"><i class="fa-solid fa-arrow-rotate-left"></i></button>
+        </div>
+    </div>
+    <div class="Message">
+        <i class="fa-solid fa-circle-plus"></i> Added!
     </div>
 </body>
 </html>
