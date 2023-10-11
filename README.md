@@ -1,6 +1,6 @@
 # Javascript Challenges (v1.0)
 
-Lastest Version of Javascript Challenges: [Javascript Project Challenges (v2.0)](https://github.com/yukilun/javascript-challenges)
+> Lastest Version of My Javascript Challenges: [Javascript Project Challenges (v2.0)](https://github.com/yukilun/javascript-challenges)
 
 ![Thumbnail for Javascript Project Challenges](/assets/js-challenges.png)
 
